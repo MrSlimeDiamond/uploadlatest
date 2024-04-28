@@ -1,0 +1,9 @@
+# Configuration variables
+LOCAL_SCREENSHOT_DIR="$HOME/Pictures/Screenshots" # For GNOME
+REMOTE_USERNAME="images"
+REMOTE_HOST="example.com"
+REMOTE_URL="i.example.com"
+REMOTE_PATH="/home/images/i.example.com"
+SSH_PORT="22"
+DEFAULT_SERVICE="imgur"
+IMGUR_CLIENT_ID="CLIENT_ID_HERE"
