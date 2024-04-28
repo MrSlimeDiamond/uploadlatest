@@ -1,7 +1,6 @@
 # uploadlatest
 CLI util for uploading screenshots to FTP or Imgur.
 
-
 ## Configuration
 Copy uploadlatest.conf.default to ~/.config/uploadlatest.conf
 
@@ -17,3 +16,13 @@ Set authorization type to anonymous usage without user authorization
 Set callback URL to imgur.com
 
 Paste the client ID in your config file.
+
+## Usage
+After configuration, you can simply use `uploadlatest` to take the latest screenshot from your screenshots directory.
+
+```
+Usage: uploadlatest [options]
+Options:
+  -s, --service <service>   Specify the service (ftp or imgur)
+  -h, --help                Display this help message
+```
