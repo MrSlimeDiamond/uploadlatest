@@ -1,6 +1,6 @@
 # uploadlatest
 CLI util for uploading screenshots to FTP or Imgur.
-===
+
 
 ## Configuration
 Copy uploadlatest.conf.default to ~/.config/uploadlatest.conf
