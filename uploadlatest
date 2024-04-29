@@ -58,8 +58,13 @@ elif [ "$SERVICE" == "imgur" ]; then
     fi
     url="$imgur_url"
 fi
-# Copy the URL to clipboard using wl-clipboard
-echo -n "$url" | wl-copy
+
+# Copy image URL
+if [ "$XDG_SESSION_TYPE" = "wayland" ]; then
+	echo -n "$url" | wl-copy
+elif [ "$XDG_SESSION_TYPE" = "x11" ]; then
+	echo -n "$url" | xclip -selection clipboard
+fi
 
 echo "Screenshot uploaded"
 echo "URL: $url"
