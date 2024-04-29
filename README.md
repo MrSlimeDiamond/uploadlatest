@@ -1,15 +1,31 @@
 # uploadlatest
 CLI util for uploading screenshots to FTP or Imgur.
 
-## Command setup
+## Initial setup
 Copy uploadlatest to /usr/bin/uploadlatest
 
-`# cp uploadlatest /usr/bin/uploadlatest`
+```
+# cp uploadlatest /usr/bin/uploadlatest
+```
+
+### Dependencies
+Debian/Ubuntu & Derivatives
+
+```
+# apt install jq curl
+```
+
+Arch
+```
+# pacman -S jq curl
+```
 
 ## Configuration
 Copy uploadlatest.conf.default to ~/.config/uploadlatest.conf
 
-`$ cp uploadlatest.conf.default ~/.config/uploadlatest.conf`
+```
+$ cp uploadlatest.conf.default ~/.config/uploadlatest.conf
+```
 
 Configure this file using your favourite editor.
 
