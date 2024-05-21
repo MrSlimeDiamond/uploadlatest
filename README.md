@@ -9,15 +9,27 @@ Copy uploadlatest to /usr/bin/uploadlatest
 ```
 
 ### Dependencies
-Debian/Ubuntu & Derivatives
+Debian/Ubuntu & Derivatives:
 
 ```
-# apt install jq curl
+# apt-get install jq curl
 ```
 
-Arch
+Arch:
 ```
 # pacman -S jq curl
+```
+
+If you are on Xorg, you will need the `xclip` package:
+
+Debian/Ubuntu & Derivatives:
+```
+# apt-get install xclip
+```
+
+Arch:
+```
+# pacman -S xclip
 ```
 
 ## Configuration
